@@ -53,10 +53,10 @@ public class TestPersonBuilder {
 	public void amigoAntesReitor() {
 		Pessoa p = new PessoaBuilder()
 				.criarSenhorChamado("Fulano")
-				.adicionando("Amigo")
-				.antes()
 				.queEReitor()
 				.queEDeputado()
+				.adicionando("Amigo")
+				.antes()
 				.get();
 		assertEquals("Amigo Magnífico(a) Excelentíssimo(a) Sr. Fulano", p.titulo());
 	}
@@ -65,10 +65,10 @@ public class TestPersonBuilder {
 	public void amigoDepoisReitor() {
 		Pessoa p = new PessoaBuilder()
 				.criarSenhorChamado("Fulano")
-				.adicionando("amigo")
-				.depois()
 				.queEReitor()
 				.queEDeputado()
+				.adicionando("amigo")
+				.depois()
 				.get();
 		assertEquals("Magnífico(a) Excelentíssimo(a) Sr. Fulano amigo", p.titulo());
 	}
