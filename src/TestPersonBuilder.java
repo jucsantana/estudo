@@ -54,7 +54,6 @@ public class TestPersonBuilder {
 		Pessoa p = new PessoaBuilder()
 				.criarSenhorChamado("Fulano")
 				.queEReitor()
-				.queEDeputado()
 				.adicionando("Amigo")
 				.antes()
 				.get();
@@ -66,7 +65,6 @@ public class TestPersonBuilder {
 		Pessoa p = new PessoaBuilder()
 				.criarSenhorChamado("Fulano")
 				.queEReitor()
-				.queEDeputado()
 				.adicionando("amigo")
 				.depois()
 				.get();
