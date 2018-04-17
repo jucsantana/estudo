@@ -41,11 +41,13 @@ public class TestPersonBuilder {
 	
 	@Test
 	public void deveCriarUmSenhorQueEReitorDeputado() {
+		
 		Pessoa p = new PessoaBuilder()
 				.criarSenhorChamado("Fulano")
 				.queEReitor()
 				.queEDeputado()
 				.get();
+		
 		assertEquals("Magnífico(a) Excelentíssimo(a) Sr. Fulano", p.titulo());
 	}
 	
