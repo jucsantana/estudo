@@ -57,7 +57,7 @@ public class TestPersonBuilder {
 				.adicionando("Amigo")
 				.antes()
 				.get();
-		assertEquals("Amigo Magnífico(a) Excelentíssimo(a) Sr. Fulano", p.titulo());
+		assertEquals("Amigo Magnífico(a) Sr. Fulano", p.titulo());
 	}
 	
 	@Test
@@ -68,6 +68,6 @@ public class TestPersonBuilder {
 				.adicionando("amigo")
 				.depois()
 				.get();
-		assertEquals("Magnífico(a) Excelentíssimo(a) Sr. Fulano amigo", p.titulo());
+		assertEquals("Magnífico(a) Sr. Fulano amigo", p.titulo());
 	}
 }
